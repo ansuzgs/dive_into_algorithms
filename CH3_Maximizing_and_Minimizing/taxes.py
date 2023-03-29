@@ -23,7 +23,6 @@ threshold = 0.0001
 MAX_ITER = 10000
 rate_change = math.inf
 
-keep_going = True
 iterations = 0
 while((iterations < MAX_ITER) and (abs(rate_change) > threshold)):
     rate_change = step_size*revenue_derivative(current_rate)
