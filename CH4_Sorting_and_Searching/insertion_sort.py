@@ -4,8 +4,9 @@ def insert_cabinet(cabinet, to_insert):
     check_location = len(cabinet) - 1
     insert_location = 0
     global stepcounter
-    
+
     while(check_location >= 0):
+        stepcounter += 1
         if(to_insert > cabinet[check_location]):
             insert_location = check_location + 1
             check_location = -1
